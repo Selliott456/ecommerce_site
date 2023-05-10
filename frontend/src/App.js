@@ -21,7 +21,7 @@ function App() {
         <Route path="/product-details/:id" element={<ProductDetailsPage />} />
         <Route path="/cart" element={<CartPage />} />;
         {/* <Route path="*" element="404 Page does not exist" /> */}
-        <Route element={ProtectedRoutesComponent}>
+        <Route element={<ProtectedRoutesComponent />}>
           <Route path="/user" element={<UserProfilePage />} />;
           <Route path="/user/my-orders" element={<UserOrdersPage />} />;
           <Route
